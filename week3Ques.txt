@@ -1,0 +1,30 @@
+1.Create database 
+a.Students
+b.Employee
+
+2.Create Std_table Table with 5 records under Students DB with  Std_Id , Std_Name, Std_Mark,Std_Address (Marks for 5 records as follows 90,70,70,60,80)
+
+3.Create Emp_table Table with 5 records under Employee DB with  Emp_Id , Emp_Name , Emp_Salary , Emp_phn, Emp_Address (Salary for 5 records as follows 10000,40000,50000,50000,60000)
+
+
+4. Get all records from Std_table where mark is 70
+
+5. Get mark of sudents where student Id is 5
+
+6. Get all employee details from Emp_table
+
+7 .Get employee names whose Salary is more than 50,000
+
+8. Update the Salry of employee from 10,000 to 20,000
+
+9 .Delete the record of the student with 60 marks
+
+10.Delete records of Std_table
+
+11.Delete Emp_table
+
+12.Delete Students DB
+
+13.Print hello "your name".pass your name as a argument .using python flask
+
+14.Print sum of odd number using python flask.

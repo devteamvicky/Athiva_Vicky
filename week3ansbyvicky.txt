@@ -1,0 +1,157 @@
+1.Create database 
+a.Students
+b.Employee
+
+
+create database student;
+create database Employee;
+
+=======================================================================
+
+2.Create Std_table Table with 5 records under Students DB with  Std_Id , Std_Name, Std_Mark,Std_Address (Marks for 5 records
+as follows 90,70,70,60,80)
+
+create table Std_Table(
+Std_Id integer,
+Std_Name varchar(250),
+Std_Marks integer,
+Std_Adress varchar(250));
+
+RECORDS:
+
+insert into std_table values(0001,"VigneshN",90,"bsjd,sbk,sbk");
+insert into std_table values(0002,"Vijayakumar",70,"sbakj,sbk,msj");
+insert into std_table values(0003,"Tony-stark",70,"Washington,America,600001");
+insert into std_table values(0004,"Captain-America",60,"NewYork,America,600002");
+insert into std_table values(0005,"Thor",80,"Muttu Santhu bar,New Asgard,600003");
+
+=======================================================================
+3.Create Emp_table Table with 5 records under Employee DB with  Emp_Id , Emp_Name , Emp_Salary , Emp_phn, Emp_Address 
+(Salary for 5 records as follows 10000,40000,50000,50000,60000)
+
+create table Emp_Table(
+Emp_id integer,
+Emp_Name varchar(250),
+Emp_Salary float,
+Emp_Phone double,
+Emp_Adress varchar(250)
+
+RECORDS:
+
+insert into emp_table values(001,"VigneshN",10000,8y8881,"bsjjkd,jjb,8880");
+insert into emp_table values(002,"Vijayakumar",40000,1u91901,"bkbk,skw,78979");
+insert into emp_table values(003,"Tony-stark",50000,9876543241,"Washington,America,600001");
+insert into emp_table values(004,"Captain-America",50000,9876543242,"NewYork,America,600002");
+insert into emp_table values(005,"Thor",60000,9876543243,"Muttu Santhu bar,New Asgard,600003");
+
+
+
+=======================================================================
+4. Get all records from Std_table where mark is 70
+
+select Std_Name,Std_Marks from std_table where Std_Marks =70;
+
+# Std_Name		Std_Marks
+Vijayakumar		70
+Tony-stark		70
+
+========================================================================
+5. Get mark of sudents where student Id is 5
+
+select std_id,std_name,Std_Marks from Std_table where std_id=5;
+
+# std_id	std_name	Std_Marks
+	5	Thor			80
+
+========================================================================
+
+
+6. Get all employee details from Emp_table
+
+select *from Emp_table;
+
+# Emp_id, Emp_Name, Emp_Salary, Emp_Phone, Emp_Adress
+'1', 'VigneshN', '10000', 'y89889', 'bdjsbj,bdajabdjk,8989'
+'2', 'Vijayakumar', '40000', 'u8uu0', 'gfgdsj,bjhd,6898'
+'3', 'Tony-stark', '50000', '9876543241', 'Washington,America,600001'
+'4', 'Captain-America', '50000', '9876543242', 'NewYork,America,600002'
+'5', 'Thor', '60000', '9876543243', 'Muttu Santhu bar,New Asgard,600003'
+
+=======================================================================
+7 .Get employee names whose Salary is more than 50,000
+
+select emp_name,Emp_salary from emp_table where Emp_Salary>50000 order by emp_name;
+
+=======================================================================================
+
+8. Update the Salry of employee from 10,000 to 20,000
+
+update Emp_table set Emp_salary=20000 where emp_id=1;
+# Emp_id, Emp_Name, Emp_Salary, Emp_Phone, Emp_Adress
+'1', 'VigneshN', '20000', '86989', 'virjabjbdakjugavur,gkjdkj,789788'
+
+=======================================================================================
+9.Delete the record of the student with 60 marks
+
+delete from std_table where std_Marks =60;
+
+=======================================================================================
+
+10.Delete records of Std_table
+delete from Std_table;
+
+=======================================================================================
+
+11.Delete Emp_table
+
+delete from emp_table;
+
+=======================================================================================
+12.Delete Students DB
+
+delete from stu_table;
+
+=======================================================================================
+
+13.Print hello "your name".pass your name as a argument .using python flask
+
+from flask import *
+#13.Print hello "your name".pass your name as a argument .using python flask
+app=Flask(__name__)
+@app.route('/')
+def hello_world():
+    return 'Helloo Vignesh'
+if __name__=='__main__':
+    app.run()
+
+=======================================================================================
+
+14.Print sum of odd number using python flask.
+
+from flask import *
+#13.Print hello "your name".pass your name as a argument .using python flask
+app=Flask(__name__)
+@app.route('/')
+def add_sum(x,y):
+    start = 0
+    for i in range(x, y):
+        if i % 2!=0:
+            start = start + i
+            start + i
+            print("ODD numer is ",i)
+    return "Sum of odd numer is =",start
+print(add_sum(0,25))
+if __name__=='__main__':
+    app.run()
+
+===========================================================================
+
+
+
+
+
+
+
+
+
+
