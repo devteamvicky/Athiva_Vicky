@@ -1,0 +1,363 @@
+1)1.Find the number of words in given string  word= "Python is an interpreter language,that executes the code line by line." (without using any methods)
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+					
+
+				================================FOR LOOP==================================================
+
+
+
+ def find_the_number_of_words(s):
+    start=0
+    for i in s:
+        start += 1
+    return start
+string_word= "Python is an interpreter language,that executes the code line by line."
+print("Total of String Words = ",find_the_number_of_words(string_word))
+
+
+					================================OR While LOOP==================================================
+
+def findthe_numberwithwhileloop(s):
+    start=0
+    while s[start:]:
+        start +=1
+    return start
+
+string_word= "Python is an interpreter language,that executes the code line by line."
+print(findthe_numberwithwhileloop(string_word))
+
+
+
+
+
+===========================================================================================================================================================
+2]  			list out properties and methods in below object TV,Bike,Tractor
+
+3)			create a class and object in above object (TV,Bike,Tractor)
+
+---------Quest--2,3----------------------------------------Type 1 with Self-initialing Method and passing arguments-----------------------------------------
+
+
+
+def vicky():
+    pass
+class vicky:
+    #2.list out properties and methods in below object TV,Bike,Tractor
+    def __init__(self,TvBrand,TvModel,DisplaySize,ScreenType,OS,SmartTV,Mileage,
+                 EngineType,FuelCapacity,BodyType,BikeModel,BikeBrand,TractorBrand,TractorModel,
+                 TractorMileage,TractorEngineType,TractorFuelCapacity,TractorBodyType,NoofCylinder
+                 ,SteeringType):
+
+            self.TvBrand=TvBrand
+            self.TvModel=TvModel
+            self.DisplaySize=DisplaySize
+            self.ScreenType=ScreenType
+            self.OS=OS
+            self.SmartTV = SmartTV
+            self.Mileage=Mileage
+            self.FuelCapacity=FuelCapacity
+            self.EngineType=EngineType
+            self.BodyType=BodyType
+            self.BikeBrand=BikeBrand
+            self.BikeModel = BikeModel
+            self.TractorBrand=TractorBrand
+            self.TractorModel=TractorModel
+            self.TractorMileage=TractorMileage
+            self.TractorEngineType=TractorEngineType
+            self.TractorFuelCapacity=TractorFuelCapacity
+            self.TractorBodyType=TractorBodyType
+            self.NoofCylinder=NoofCylinder
+            self.SteeringType=SteeringType
+
+    def tv_(self):
+        print("==========================Tv-Properties================================")
+        print("Tv DisplaySize = "+self.DisplaySize)
+        print("Tv Model = "+self.TvModel)
+        print("Tv Brand = "+self.TvBrand)
+        print("Tv OS = "+ self.OS)
+        print("Tv SmartTV = "+self.SmartTV)
+        print("Tv ScreenType = " + self.ScreenType)
+    def bike(self):
+        print("==========================BIKE-Properties================================")
+
+        print("bike Brand = "+ self.BikeBrand)
+        print("bike Model = "+ self.BikeModel)
+        print("bike Mileage = "+ self.Mileage)
+        print("bike EngineType = "+self. EngineType)
+        print("bike FuelCapacity = "+self. FuelCapacity)
+        print("bike BodyType = "+ self.BodyType)
+    def tractor(self):
+        print("==========================Tractor-Properties================================")
+
+        print("Tractor Brand = "+ self.TractorBrand)
+        print("Tractor Model = "+ self.TractorModel)
+        print("Tractor Mileage = "+ self.TractorMileage)
+        print("Tractor EngineType = "+self. TractorEngineType)
+        print("Tractor FuelCapacity = "+self. TractorFuelCapacity)
+        print("Tractor BodyType = "+ self.TractorBodyType)
+        print("Tractor NoofCylinder = " + self.NoofCylinder)
+        print("Tractor SteeringType = " + self.SteeringType)
+allspecif=vicky("Samsung","S20","52 INCH","OLED","ANDROID 10.1","Wifi-SmartTv",
+                "160","V6BSI-Engine","15Litre","Aluminum-Steel","Royal2022","RoyalEnfield"
+                ,"MahendiraTech","John Deere 5105","65kms","BSI-V6","60Litres","Steel-iron","6cyliders","PowerStreeing")
+allspecif.tv_()
+allspecif.bike()
+allspecif.tractor()
+
+#PS:update and  check For Tv model
+#allspecif.TvModel="VICKY"
+#print(allspecif.TvModel)
+
+
+
+====================================================================================================================================================================
+2,3				type2: without self,and initializing parameters 
+-----------------------------------------------------------------------------
+
+
+
+def bike(Mileage,EngineType,FuelCapacity,BodyType,BikeModel,BikeBrand):
+    print("==========================BIKE-Properties================================")
+    print("bike Brand = " + BikeBrand)
+    print("bike Model = " + BikeModel)
+    print("bike Mileage = " + Mileage)
+    print("bike EngineType = " + EngineType)
+    print("bike FuelCapacity = " + FuelCapacity)
+    print("bike BodyType = " + BodyType)
+
+
+def tractor(TractorBrand,TractorModel,TractorMileage,TractorEngineType,TractorFuelCapacity,
+                TractorBodyType,NoofCylinder,SteeringType):
+    print("==========================Tractor-Properties================================")
+    print("Tractor Brand = " + TractorBrand)
+    print("Tractor Model = " + TractorModel)
+    print("Tractor Mileage = " + TractorMileage)
+    print("Tractor EngineType = " + TractorEngineType)
+    print("Tractor FuelCapacity = " + TractorFuelCapacity)
+    print("Tractor BodyType = " + TractorBodyType)
+    print("Tractor NoofCylinder = " + NoofCylinder)
+    print("Tractor SteeringType = " + SteeringType)
+
+
+def tv(TvBrand,TvModel,DisplaySize,ScreenType,OS,SmartTV):
+    print("==========================Tv-Properties================================")
+    print("Tv DisplaySize = " + DisplaySize)
+    print("Tv Model = " + TvModel)
+    print("Tv Brand = " + TvBrand)
+    print("Tv OS = " + OS)
+    print("Tv SmartTV = " + SmartTV)
+    print("Tv ScreenType = " + ScreenType)
+
+'''allspecific=vicky("Samsung","S20","52 INCH","OLED","ANDROID 10.1","Wifi-SmartTv",
+               "160","V6BSI-Engine","15Litre","Aluminum-Steel","Royal2022","RoyalEnfield"
+                ,"MahendiraTech","John Deere 5105","65kms","BSI-V6","60Litres","Steel-iron","6cyliders","PowerStreeing")'''
+allspecificTv=tv("Samsung","S20","52 INCH","OLED","ANDROID 10.1","Wifi-SmartTv")
+allspecificbike=bike("160","V6BSI-Engine","15Litre","Aluminum-Steel","Royal2022","RoyalEnfield")
+allspecifictractor=tractor("MahendiraTech","John Deere 5105","65kms","BSI-V6","60Litres","Steel-iron","6cyliders","PowerStreeing",)
+#with function name call with parameters
+tv("Apple","S20","52 INCH","OLED","iOS 15.1","Wifi-SmartTv")
+
+
+
+
+====================================================================================================================================================================
+4.Create 2 Car object using class with poperties Color and Brand
+------------------------------------------------------------------
+
+
+
+class Trending_car:
+    pass
+class Trending_car:
+    def __init__ (self,color,brand):
+        self.color=color
+        self.brand=brand
+
+    def car(self):
+     print("This is New Colors Of Benz "+self.color)
+     print("This is New Brand Of Benz"+self.brand)
+
+car1=Trending_car("green","Benz")
+car2=Trending_car("Red","RollsRoyce")
+print(car1.color,end=" ")
+print(car1.brand)
+print(car2.color,end=" ")
+print(car2.brand)
+
+#updating color and brand
+#car1.color="orange"
+#car1.brand="vuicky"
+#print(car1.color,car1.brand,end=" ")
+
+
+
+		---------------------------------------2-nd type with function parameters------------------------------------------------
+
+
+'''def properties_(color,brand):
+        print("This is New Colors Of "+color )
+        print("This is New Brand Of "+brand)
+car1=properties_("Green","Benz")
+car2=properties_("Red","RollsRoys")'''
+
+
+
+================================================================================================================================================================
+# 5). 	Create 2 Computer object using class With propety for 1st object CPU=""i3"" and RAM = 4 and second object CPU = ""i4"" and RAM = 16
+    		# Modify the RAM value of 1st object from 4 to 8
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+class vicky:
+    
+    def __init__(self, CPU, RAM):
+        self.CPU = CPU
+        self.RAM = RAM
+
+    def specOf_computer(self):
+        print("The Pc Cpu Processor is "+ self.CPU)
+        print("The Pc RAM SIZE  is " + self.RAM)
+
+obj_1 = vicky("i-3 Processor", "4GB RAM")
+print("The Computer1 Specifications :","\n"+obj_1.CPU, obj_1.RAM)
+obj_2 = vicky("i-4 Processor","16GB RAM")
+print("The Computer2 Specifications :","\n"+obj_2.CPU, obj_2.RAM)
+print("**************************MODIFY THE RAM 4GB to 8 GB******************************************")
+print("Computer 1 Ram is : ",obj_1.RAM)
+obj_1.RAM="8GB RAM"
+print("=============================================================================")
+print("Now...Computer 1 Ram is : ",obj_1.RAM)
+print("=============================================================================")
+print("finaly OBJECT 1 RAM AND CPU IS :",obj_1.CPU,obj_1.RAM)
+
+
+
+=============================================================================================================================================================
+#6.)	Number=28 To check the given number is divisible by 7 or not
+---------------------------------------------------------------------------------------------------
+
+
+numbers=28
+if numbers % 7==0:
+    print("The Given Number divisible by'7'")
+else:
+    print("Not divisible By 7")
+
+
+
+==============================================================================================================================================================
+#7.print 1 to 10 numbers and display a message "Done" after successful execution of loop.
+------------------------------------------------------------------------------------------------------
+				--------------------------For Loop---------------------------
+
+
+
+'''for i in range(1,11):
+    print(i)
+print(" Done...!!!successfully execution of loop")'''
+
+'''
+				------------------------WhileLoop------------------------------------------------------------
+
+i=1
+while i<=10:
+    print(i)
+    i += 1
+print(" Done...!!!successfully execution of loop")'''
+
+
+
+================================================================================================================================================================
+8.Find average of given number 5,12,8,3,10
+--------------------------------------------
+
+
+
+def avg_given_number(N):
+    num = 0
+    for i in N:
+        num=num + i
+    avg=num/len(N)
+    return avg
+x = 5, 12, 8, 3, 10
+print("Average of Number",x,":","\n","Avg = ",avg_given_number(x))
+
+
+
+==================================================================================================================================================================
+9.To print the current date and time
+-------------------------------------------
+
+class vicky:
+    from datetime import date
+    from datetime import datetime
+    for i in range (11):
+        print(datetime.now())
+
+===================================================================================================================================================================
+#10).Take in the marks of 6 subjects and display the grade.
+--------------------------------------------------------------
+
+
+tamil=float(input("Enter Tamil Marks= "))
+english=float(input("Enter english Marks= "))
+maths=float(input("Enter maths Marks= "))
+physics=float(input("Enter physics Marks= "))
+chemistry=float(input("Enter chemistry Marks= "))
+computer_science=float(input("Enter computer_science Marks= "))
+
+sum=tamil+english+maths+physics+chemistry+computer_science
+print("                          total=",sum)
+avg=sum/6
+print("                          Average=",avg)
+
+while avg <100:
+    if avg>=80:
+        print("A-grade")
+        break
+
+    elif avg>=70:
+        print("B-grade")
+        break
+
+    elif avg >= 60:
+        print("C-grade")
+        break
+    elif avg>=50:
+        print("D-Grade")
+        break
+    elif avg<50:
+        print("your Fail...please Try Next Time")
+        break
+    else:
+        print("Enter Marks only out of 100")
+        break
+print(avg,"/100")
+if avg>100:
+    print("please Enter the Valid mark out of 100")
+else:
+    print("congrats.....")
+
+
+===================================================================================================================================================================
+11.To check your payment transaction is success or failure (simple way) using exception handling.
+-------------------------------------------------------------------------------------------------
+
+
+try:
+    amount=int(input("Enter the Amount = "))
+    if amount>0:
+        print("===============Try Block Works==================")
+        print("amount sucessfully Transactioned")
+    else:
+        print("cannot transferred nagative number of amount")
+except ValueError as e:
+    print("============except Block Works======================")
+    print("You have enter negative amount or invalid keys")
+    print(" error Type = ",e)
+finally:
+    print("************Thank you for using Wikey Payment Gateway****************")
+
+=====================================================================================================================================================================
+

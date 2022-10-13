@@ -1,0 +1,26 @@
+Task program:
+1.Find the number of words in given string  word= "Python is an interpreter language,that executes the code line by line." (without using any methods)
+
+2.list out properties and methods in below object
+TV
+Bike
+Tractor
+
+3.create a class and object in above object (TV,Bike,Tractor)
+
+4.Create 2 Car object using class with poperties Color and Brand
+
+5.Create 2 Computer object using class With propety for 1st object CPU=""i3"" and RAM = 4 and second object CPU = ""i4"" and RAM = 16
+Modify the RAM value of 1st object from 4 to 8
+
+6.Number=28 To check the given number is divisible by 7 or not.
+
+7.print 1 to 10 numbers and display a message "Done" after successful execution of loop.
+
+8.Find average of given number 5,12,8,3,10
+
+9.To print the current date and time
+
+10.Take in the marks of 6 subjects and display the grade.
+
+11.To check your payment transaction is success or failure (simple way) using exception handling.

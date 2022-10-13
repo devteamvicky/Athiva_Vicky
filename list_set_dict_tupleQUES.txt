@@ -1,0 +1,25 @@
+1.Create a list   vechicle = ["Auto","Bus","Car","Lorry","Scooty"]
+a.Print the second item in the list.
+B.Add Cycle to the  list , insert Bike in 3rd position and remove Lorry from the  list.
+c. Use a range of indexes to print the second, third item in the list.
+
+
+2.Create a tuple   color=("black","blue","Pink","green","violet","purple")
+a. Print the number of items in the tuple
+b. Use negative indexing to print the last item in the tuple
+
+
+3.Create set   animals={"Cat","Dog","Fox","Camel","Lion","Zebra"}
+a.Check if Fox is present in the  set.
+b.remove camel from the  set.
+
+
+4.Dictionary  Person = {
+"name":"Sasi"
+"Age":22
+"Place":"Cbe"
+}
+a.Print the value of the age key of the person dictionary.
+b.Change the name value from Sasi to Sasidharan
+c.Add the key/value pair ""phone"" : 123 to the dictionary.
+d.Remove age from the  dictionary."

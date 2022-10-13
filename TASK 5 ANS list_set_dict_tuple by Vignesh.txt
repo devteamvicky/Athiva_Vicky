@@ -1,0 +1,107 @@
+
+-------------------------------------------------PROGRAM--------------------------------------------------------
+
+# 1.Create a list   vechicle = ["Auto","Bus","Car","Lorry","Scooty"]
+# a.Print the second item in the list.
+# B.Add Cycle to the  list , insert Bike in 3rd position and remove Lorry from the  list.
+# c. Use a range of indexes to print the second, third item in the list.
+
+print('***********LIST**********************')
+vechicle = ["Auto","Bus","Car","Lorry","Scooty"]
+print('Print the second item in the list\n',vechicle[1])
+vechicle.append('Cycle')
+print('Add Cycle to the  list',vechicle)
+vechicle.insert(3,'Bike')
+print(vechicle)
+vechicle.remove('Lorry')
+print(vechicle)
+for i in [vechicle]:
+    print(vechicle[1:3])
+
+#2)Tuple
+print('******Tuple*************')
+#c. Use a range of indexes to print the second, third item in the list.
+color = "black", "blue", "Pink", "green", "violet", "purple"
+#a. Print the number of items in the tuple
+no_of_items=len(color)
+print(' the number of items in the tuple \n',no_of_items)
+#Use negative indexing to print the last item in the tuple
+print('Use negative indexing to print the last item in the tuple \n ',color[-1])
+
+#or for loop function for negative indexing
+for i in [color]:
+    print(color[-1])
+#3)SET datatype
+print('*********SET**********')
+#3.Create set   animals={"Cat","Dog","Fox","Camel","Lion","Zebra"}
+# a.Check if Fox is present in the  set.
+# b.remove camel from the  set.
+
+animals={"Cat","Dog","Fox","Camel","Lion","Zebra"}
+present='Fox' in animals
+print('IS FOX IS : ',present)
+print('Animals = ',animals)
+animals.remove('Camel')
+print('Removed Camel Animal \n',animals)
+
+#4)Dictionery
+print('**********Dictionery*************')
+
+Person = {
+"name":"Sasi",
+"Age":22,
+"Place":"Cbe"
+}
+# a.Print the value of the age key of the person dictionary.
+print('the value of the age key of the person dictionar \n',Person['Age'])
+# b.Change the name value from Sasi to Sasidharan
+print(Person)
+Person['name']='Sasidharan'
+print('Change the name value from Sasi to Sasidharan \n',Person['name'])
+# c.Add the key/value pair ""phone"" : 123 to the dictionary.
+print(Person)
+Person['phone']=123
+print('Change the name value from Sasi to Sasidharan \n',Person)
+#d.Remove age from the  dictionary."
+print(Person)
+del Person['Age']
+print('Remove age from the  dictionary\n',Person)
+
+----------------------------------CONSOLE OUTPUT-----------------------------------------
+
+C:\Users\Tonystark\PycharmProjects\FlaskProject_Vicky\venv\Scripts\python.exe C:\Users\Tonystark\PycharmProjects\FlaskProject_Vicky\list_tuble_dictionery.py 
+***********LIST**********************
+Print the second item in the list
+ Bus
+Add Cycle to the  list ['Auto', 'Bus', 'Car', 'Lorry', 'Scooty', 'Cycle']
+['Auto', 'Bus', 'Car', 'Bike', 'Lorry', 'Scooty', 'Cycle']
+['Auto', 'Bus', 'Car', 'Bike', 'Scooty', 'Cycle']
+['Bus', 'Car']
+******Tuple*************
+ the number of items in the tuple 
+ 6
+Use negative indexing to print the last item in the tuple 
+  purple
+purple
+*********SET**********
+IS FOX IS :  True
+Animals =  {'Camel', 'Lion', 'Dog', 'Fox', 'Zebra', 'Cat'}
+Removed Camel Animal 
+ {'Lion', 'Dog', 'Fox', 'Zebra', 'Cat'}
+**********Dictionery*************
+the value of the age key of the person dictionar 
+ 22
+{'name': 'Sasi', 'Age': 22, 'Place': 'Cbe'}
+Change the name value from Sasi to Sasidharan 
+ Sasidharan
+{'name': 'Sasidharan', 'Age': 22, 'Place': 'Cbe'}
+Change the name value from Sasi to Sasidharan 
+ {'name': 'Sasidharan', 'Age': 22, 'Place': 'Cbe', 'phone': 123}
+{'name': 'Sasidharan', 'Age': 22, 'Place': 'Cbe', 'phone': 123}
+Remove age from the  dictionary
+ {'name': 'Sasidharan', 'Place': 'Cbe', 'phone': 123}
+
+Process finished with exit code 0
+
+
+
