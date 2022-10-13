@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VigneshHostWebsite </title>
+</head>
+<body>
+<body style="background-color:powderblue;">
+<h1>Welcome Athiv Technology</h1>
+<p>This is One of the Task my Apache2 server.</p>
+<p>
+<img src="C:\Users\Tonystark\Desktop\pythonTask\apachae 2" </p>
+</body>
+</html>
+
+
